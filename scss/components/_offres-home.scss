@@ -1,0 +1,52 @@
+.offres--home{
+	width: 100%;
+	max-width: 95em;
+	margin: 6em auto;
+}
+
+.offre--home{
+	width: 25%;
+	float: left;
+
+	.pic-container-link{
+		width: 100%;
+		display: block;
+		padding: 5%;
+
+		transition: all 0.3s ease;
+
+		&:hover {
+			border: 2px solid $gray;
+		}
+	}
+	
+	.pic-container-offre{
+		width: 100%;
+		display: block;
+		padding: 40% 0 30%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}	
+
+	img{	
+		width: 100%;
+		max-width: 100%;
+	}
+
+	h1{
+		font-size: 1.5em;
+		line-height: 2;
+		padding: 0.5em 1em;
+		text-align: center;
+		background-color: rgba($white, 0.85);
+	}
+
+	// .btn{
+	// 	display: block;
+	// 	width: auto;
+	// 	margin: 0 auto;
+	// 	padding: 0.5em 1em;
+	// 	border: 1px solid $gray;
+	// }
+}

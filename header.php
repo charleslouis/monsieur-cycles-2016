@@ -50,9 +50,9 @@
 	<?php 
 		if(is_front_page()):
 			get_template_part('templates/home', 'banner'); 
+			get_template_part('templates/rubriques', 'home'); 
 		endif;
 	?>
-
 
 	<div id="content" class="site-content" tabindex="-1">
 		<div class="col-full">
