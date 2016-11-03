@@ -1,0 +1,115 @@
+.products-list-title{
+	position: relative;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.products-list-title span{
+	background-color: #FFF;
+	position: relative;
+	z-index: 2;
+	padding: 0 1em;
+}
+
+.products-list-title:after{
+	display: block;
+	content: " ";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	border: 1px solid #60646C;
+}
+
+.product-details{
+	font-size: 0.8em;
+	list-style-type: none;
+	list-style-position: outside;
+	margin-left: 0;
+	margin-top: 0.5em;
+}
+
+.product-occasion {
+	position: relative;
+    padding: 1em;
+    background-color: rgba(238, 238, 238, 0.10);
+    border: 1px solid #ccc;
+    margin-bottom: 2em;
+    background-color: #FFF;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+    h1{
+    	font-family: $font-family-sans; 
+    	font-size: 1.125em;
+		text-align: center;
+		text-transform: uppercase; 	
+    }
+}
+.product-occasion:hover{	
+	-webkit-box-shadow: 3px 3px 3px #ccc;
+	        box-shadow: 3px 3px 3px #ccc;
+}
+
+
+.thumbnail--product-occasion{
+	width: 100%;
+	
+    filter: brightness(140%);
+    -webkit-filter: brightness(140%);
+    -moz-filter: brightness(140%);
+    -o-filter: brightness(140%);
+    -ms-filter: brightness(140%);  	
+}
+
+.button-detail--product{
+	position: relative;
+	width: 100% ;
+	font-size: 0.8em;
+	text-align: center;
+	font-family: $font-family-sans; 
+	text-transform: uppercase;
+	// position: absolute;
+	// right: 1em;
+	// left: 1em;
+	// bottom: 1em; 
+}
+
+
+@media (min-width: 768px){
+	.product-occasion{
+		width: 31%;
+		float: left;
+		margin: 0 1% 2em;
+		overflow: hidden;	
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		
+		
+		&:hover {
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		    z-index: 3;
+		}
+
+		.product-thumnail{
+		    width: auto; 
+		}
+
+	}
+
+	.woocommerce.product-columns-3 ul.products li.product, .woocommerce-page.product-columns-3 ul.products li.product {
+	    width: 30%;
+	    margin-right: 3%; 
+	}
+
+}
+
+/* Zoom In #1 */

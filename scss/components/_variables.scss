@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+$font-family-sans: "Abel", "Verdana", sans-serif;
+$font-family-serif: "Droid Serif", "Georgia", serif; 
+$font-family-mono: "Droid Serif", "Georgia", serif;
+$font-family-fun: "Bad Script", "Georgia", serif;
+
+$bannerHomeUrl: url(http://monsieurcycles.fr/wp-content/uploads/2014/02/HP-1300x590-HERO.jpg);
+
+
+$white: #fff;
+$grayDark: #60646C;
+$gray: #9aa0a7;
+$grayLight: mix($gray, $white, 20%);
+$blue: #3D9CD2;
