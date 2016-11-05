@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+.pic-container-link {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+}
+.pic-container-link:before,
+.pic-container-link:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.pic-container-link:before {
+  border-color: transparent;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  right: -2px;
+  top: -2px;
+}
+.pic-container-link:after {
+  border-bottom-width: 2px;
+  border-color: transparent;
+  border-left-width: 2px;
+  bottom: -2px;
+  left: -2px;
+}
+.pic-container-link:hover,
+.pic-container-link.hover {
+  // background-color: $gray;
+}
+.pic-container-link:hover:before,
+.pic-container-link.hover:before,
+.pic-container-link:hover:after,
+.pic-container-link.hover:after {
+  border-color: $gray;
+  height: 100%;
+  width: 100%;
+}
