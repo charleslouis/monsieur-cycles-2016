@@ -1,12 +1,20 @@
 .offres--home{
 	width: 100%;
-	max-width: 95em;
+	max-width: 1400px;
 	margin: 6em auto;
 }
 
 .offre--home{
 	width: 25%;
+
+  @media(min-width: 768px) {
+  	width: 50%;
 	float: left;
+  }
+
+  @media(min-width: 960px) {
+  	width: 25%
+  }
 
 	.pic-container-link{
 		width: 100%;
