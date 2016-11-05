@@ -51,9 +51,26 @@
 		text-transform: uppercase; 	
     }
 }
-.product-occasion:hover{	
-	-webkit-box-shadow: 3px 3px 3px #ccc;
-	        box-shadow: 3px 3px 3px #ccc;
+.product:hover{	
+	
+	.btn-2 {
+	  letter-spacing: 5px;
+	}
+
+	.btn-2:after,
+	.btn-2:before {
+	  backface-visibility: hidden;
+	  border-color: $gray;
+	  transition: width 350ms ease-in-out;
+	  width: 70%;
+	}
+
+	.btn-2:before {
+	  bottom: auto;
+	  top: 0;
+	  width: 70%;
+	}
+
 }
 
 
@@ -93,11 +110,11 @@
 		transition: .3s ease-in-out;
 		
 		
-		&:hover {
-			-webkit-transform: scale(1.1);
-			transform: scale(1.1);
-		    z-index: 3;
-		}
+		// &:hover {
+		// 	-webkit-transform: scale(1.1);
+		// 	transform: scale(1.1);
+		//     z-index: 3;
+		// }
 
 		.product-thumnail{
 		    width: auto; 

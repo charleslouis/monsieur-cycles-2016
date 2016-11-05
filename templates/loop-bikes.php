@@ -65,7 +65,7 @@
 							<li><strong>Monovitesse</strong></li>
 						<?php endif; ?>
 					</ul>
-					<a href="#" class="button button-detail--product">Details</a>
+					<a href="#" class="btn-fun btn-2">Details</a>
 				</article>
 			
 				<?php $displayed_bikes[$j] = $i; ?>
